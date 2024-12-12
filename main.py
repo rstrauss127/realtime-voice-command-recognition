@@ -6,8 +6,9 @@ from recording_helper import record_audio, terminate
 from tf_helper import preprocess_audiobuffer
 
 commands = ['stop', 'yes', 'left', 'no', 'right', 'go', 'up', 'down']
+commands = ['stop', 'yes', 'left', 'no', 'right', 'go', 'up', 'down']
 
-loaded_model = models.load_model("saved_model_mel")
+loaded_model = saved_model.load('saved_model_mel')
 
 def predict_mic():
     audio = record_audio()
