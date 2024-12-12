@@ -78,7 +78,7 @@ def move_turtle(command):
         go_left()
     elif command == 'right':
         go_right()
-    elif command == 'go':
+    elif command == 'go' or command == 'no':
         t.forward(100)
     elif command == 'stop':
         print('Stopping the turtle')
