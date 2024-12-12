@@ -19,3 +19,9 @@ Build your own real-time voice command recognition model with TensorFlow.
 
 ![Demo](demo.png)
 
+pip install pyaudio
+pip install numpy  
+pip install tensorflow
+pip install tensorflow-io 
+
+Run command: python main.py  
