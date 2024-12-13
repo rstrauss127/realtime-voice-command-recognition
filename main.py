@@ -1,5 +1,6 @@
 import numpy as np
-import tensorflow.lite as tflite
+#import tensorflow.lite as tflite
+import tflite_runtime.interpreter as tflite #razpi
 from recording_helper import record_audio, terminate
 from tf_helper import preprocess_audiobuffer
 
