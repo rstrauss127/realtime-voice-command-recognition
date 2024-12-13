@@ -29,7 +29,7 @@ def record_audio():
         channels=CHANNELS,
         rate=RATE,
         input=True,
-        input_device_index=2, # list_devices() Hard coding for now, see device_cnt.py for getting index of mic by name
+        #input_device_index=2, # list_devices() Hard coding for now, see device_cnt.py for getting index of mic by name
         frames_per_buffer=FRAMES_PER_BUFFER
     )
 
