@@ -13,5 +13,5 @@ def list_devices():
             blue_ice_index = i
         #print(f"Device {info['index']}: {info['name']}")
     p.terminate()
-    #print(blue_ice_index)
+    print(blue_ice_index)
     return blue_ice_index
