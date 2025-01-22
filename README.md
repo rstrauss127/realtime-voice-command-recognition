@@ -6,10 +6,10 @@ Gameplay: Move the blue block with your voice to issue commmans! Try not to cras
 Microphone input
 
 ## Install Instructions
-pip install pyaudio
+`pip install pyaudio
 pip install numpy  
 pip install tensorflow
-pip install tensorflow-io 
+pip install tensorflow-io` 
  
 Note: If you've attached a secondary microphone to your computer - retrieve the name of your microphone and update the device_name in the device_list.py
 
