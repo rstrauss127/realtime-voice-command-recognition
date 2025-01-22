@@ -10,8 +10,6 @@ Microphone input
 pip install numpy  
 pip install tensorflow
 pip install tensorflow-io` 
- 
-Note: If you've attached a secondary microphone to your computer - retrieve the name of your microphone and update the device_name in the device_list.py
 
 ## Start
 Run `python main.py`
