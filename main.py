@@ -1,14 +1,17 @@
 import numpy as np
-#import tensorflow.lite as tflite
-import tflite_runtime.interpreter as tflite #razpi
+import tensorflow.lite as tflite
 from recording_helper import record_audio, terminate
 from tf_helper import preprocess_audiobuffer
+import os
 
 # Define commands
 commands = ['stop', 'yes', 'left', 'no', 'right', 'go', 'up', 'down']
 
+# Create full path to the model file
+model_path = os.path.join('realtime-voice-command-recognition', "model_mel_lite.tflite") 
+
 # Load TensorFlow Lite Model
-interpreter = tflite.Interpreter(model_path='model_mel_lite.tflite')
+interpreter = tflite.Interpreter(model_path=model_path)
 interpreter.allocate_tensors()
 
 # Get input and output details
